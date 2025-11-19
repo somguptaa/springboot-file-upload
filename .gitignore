@@ -1,0 +1,91 @@
+# -----------------------------------
+# Build Tools
+# -----------------------------------
+
+# Maven
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/
+
+# Gradle
+/build/
+/.gradle/
+gradle-app.setting
+
+# Jars / Wars
+*.jar
+*.war
+*.ear
+
+# -----------------------------------
+# IDE / Editors
+# -----------------------------------
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+tmp/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# -----------------------------------
+# OS Files
+# -----------------------------------
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# -----------------------------------
+# Logs & Temp
+# -----------------------------------
+*.log
+logs/
+*.tmp
+*.temp
+
+# Spring Boot dev tools
+.spring-boot-devtools.properties
+
+# -----------------------------------
+# Docker / K8s / Env
+# -----------------------------------
+.env
+*.env
+docker-compose.override.yml
+
+# Kubernetes
+*.kubeconfig
+
+# Secrets
+*.pem
+*.key
+*.crt
+*.p12
+secret*.yml
+
+# -----------------------------------
+# Others
+# -----------------------------------
+# Lombok
+*.lombok.config
