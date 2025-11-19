@@ -100,12 +100,32 @@ files: <java>
 ### Example Response
 ```json
 {
-  "statuscode": 201,
-  "message": "Files Inserted Successfully",
+  "statuscode": 200,
+  "status": null,
+  "message": "success",
+  "data": null,
   "list": [
-    "SomResume.pdf",
-    "charminar.jpg",
-    "java.png"
+    {
+      "statuscode": 201,
+      "status": "success",
+      "message": "File Inserted Successfully",
+      "data": "SomResume.pdf",
+      "list": null
+    },
+    {
+      "statuscode": 201,
+      "status": "success",
+      "message": "File Inserted Successfully",
+      "data": "charminar.jpg",
+      "list": null
+    },
+    {
+      "statuscode": 201,
+      "status": "success",
+      "message": "File Inserted Successfully",
+      "data": "java.png",
+      "list": null
+    }
   ]
 }
 ```
