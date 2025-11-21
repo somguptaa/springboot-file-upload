@@ -1,4 +1,4 @@
-# Spring Boot File Upload API (Single & Multiple Uploads – Database Storage)
+# Spring Boot File Upload API (Single & Multiple Uploads – Database Storage + Swagger Documentation)
 
 This is practice project where i developed REST APIs to upload **single** and **multiple** files and store them inside a database.  
 Project uses a simple architecture:
@@ -8,6 +8,7 @@ Project uses a simple architecture:
 - Service (`FilesService`, `FilesServiceImpl`)
 - Repository  
 - Utility classes (`Constants`, `ResponseMessageDto`)
+- **Swagger (OpenAPI) Documentation**
 
 ---
 
@@ -17,7 +18,8 @@ Project uses a simple architecture:
 - Upload **multiple** files to database  
 - Return structured JSON response using **ResponseMessageDto**  
 - Stores file metadata: name, type, created & updated timestamps  
-- Clean, simple architecture
+- Clean, layered architecture
+- **Swagger UI enabled for API testing**
 
 ---
 
@@ -31,6 +33,7 @@ Project uses a simple architecture:
 - Lombok
 - MySQL 
 - Maven
+- **Springdoc OpenAPI (Swagger)**
 
 ---
 
@@ -147,11 +150,33 @@ files: <java>
 
 ---
 
+
+# Swagger UI URL
+```
+http://localhost:8080/swagger-ui/index.html
+```
+# Swagger Annotations Used
+```
+@OpenAPIDefinition(
+        info = @Info(
+        title = "File-Upload APIs",
+        version = "1.0",
+        description = "Single & Multiple File-Upload",
+        contact = @Contact(name ="Som Gupta",email = "somgupta0011@gmail.com")))
+```
+```
+@Operation(summary = "...", description = "...")
+```
+```
+@ApiResponses({...})
+```
+```
+@Tag(name = "....", description = ".....")
+```
 # Future Enhancements
 
 - File size validation  
 - Allowed file types validation  
 - File download API  
-- Serve image/file preview   
-- Add Swagger documentation  
+- Serve image/file preview     
  
